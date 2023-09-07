@@ -16,6 +16,7 @@ function Panel() {
       <Menu />
       <div className='all_pages'>
         <Routes>
+          <Route path='/' element={<Dashboard />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/people' element={<People />} />
           <Route path='/cryptoList' element={<CryptoList />} />

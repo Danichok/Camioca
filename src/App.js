@@ -11,6 +11,9 @@ function App() {
                 <Route path='/panel/*' element={
                     <Panel />
                 } />
+                <Route path='/' element={
+                    <Panel />
+                } />
             </Routes>
         </BrowserRouter>
     </div>
