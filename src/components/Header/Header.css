@@ -1,0 +1,109 @@
+.header {
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.user_avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #fff;
+    object-fit: cover;
+}
+
+.user_name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.select_btn {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.select_btn img {
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.user_select {
+    background-color: rgb(233, 233, 233);
+    width: 185px;
+    padding: 20px;
+
+    left: 0;
+    top: 62px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.search {
+    width: 73%;
+    display: flex;
+    align-items: center;
+}
+
+.search img {
+    width: 30px;
+    height: 30px;
+}
+
+.search input {
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    font-weight: 400;
+}
+
+.search input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.notification {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+    .search {
+        width: 63%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .search input {
+        display: none;
+    }
+    .search {
+        width: unset;
+        position: absolute;
+        margin-right: 47px;
+        right: 0;
+    }
+    
+    .notification img {
+        width: 25px;
+        height: 25px;
+    }
+    
+}

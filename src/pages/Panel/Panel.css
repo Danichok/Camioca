@@ -1,0 +1,43 @@
+.panel_main {
+  background: rgb(112, 103, 255);
+  background: linear-gradient(90deg, rgba(112, 103, 255, 1) 0%, rgba(198, 207, 255, 1) 24%, rgba(155, 238, 255, 1) 100%);
+  width: 100%;
+  height: 100vh;
+}
+
+.all_pages {
+  max-width: calc(100% - 380px);
+  width: 100%;
+  left: 350px;
+  position: absolute;
+  top: 80px;
+  height: 89vh;
+}
+
+@media screen and (max-width: 1490px) {
+  .all_pages {
+    max-width: calc(100% - 95px);
+    width: 100%;
+    left: 83px;
+    position: absolute;
+    top: 70px;
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  .all_pages {
+    max-width: unset;
+    width: 97%;
+    left: 80px;
+    position: unset;
+    top: 70px;
+    margin: 10px 10px 0px 10px;
+    padding-bottom: 10px;
+    height: unset;
+  }
+
+  .panel_main {
+    height: unset;
+  }
+}

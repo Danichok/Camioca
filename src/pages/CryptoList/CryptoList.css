@@ -1,0 +1,22 @@
+.CryptoList {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.CryptoList::-webkit-scrollbar {
+    width: 10px;
+}
+
+.CryptoList::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.CryptoList::-webkit-scrollbar-thumb {
+    background-color: rgb(212, 212, 212);
+    border-radius: 20px;
+   
+}

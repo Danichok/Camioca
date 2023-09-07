@@ -1,0 +1,125 @@
+.UserOrder {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.users_pin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    color: #a0a0a0;
+}
+
+.users_pin p {
+    width: 20%;
+    text-align: center;
+}
+
+.user_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.user_block:hover {
+    background-color: #f7f7f7;
+}
+
+.order_user_avatar {
+    width: 33.3%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.order_user_avatar img {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.user_date {
+    width: 33.3%;
+    text-align: center;
+}
+
+.user_status {
+    width: 33.3%;
+    text-align: right;
+    color: white;
+}
+
+.user_status div {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.user_scroll {
+    overflow-y: scroll;
+    height: 260px;
+    margin-bottom: 20px;
+
+}
+
+.user_scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.user_scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.user_scroll::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+}
+.UserOrder_plot {
+    margin-bottom: 10px;
+    color: #23005B;
+}
+@media screen and (max-width: 1105px) {
+    .user_list {
+        width: 100%;
+    }
+    .UserOrder {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .order_user_avatar {
+        width: 63%;
+    }
+    .order_user_avatar img {
+        margin-right: 10px;
+    }
+    .user_status {
+        width: unset;
+    }
+    .user_status div {
+        width: 30px;
+        height: 30px;
+        max-width: unset;
+    }
+    .user_status p {
+        display: none;
+    }
+    .users_pin {
+        display: none;
+    }
+    .user_scroll {
+       margin-bottom: 0px;
+    }
+}

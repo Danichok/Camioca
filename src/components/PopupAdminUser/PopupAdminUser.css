@@ -1,0 +1,122 @@
+.PopupAdminUser {
+    background-color: rgba(0, 0, 0, 0.63);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 999999999999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PopupAdminUser_block {
+    position: absolute;
+    background: white;
+    z-index: 9999999999999;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.user_details {
+    display: flex;
+
+}
+
+.user_details_avatar {
+    width: 200px;
+    height: 200px;
+
+    margin-right: 20px;
+}
+
+.user_details_avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.user_details_content span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.user_details_desc {
+    width: 300px;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #7a7a7a;
+}
+
+.setting_user {
+    margin-left: 30px;
+    text-align: right;
+}
+
+.setting_user button {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    background-color: #7a7a7a;
+}
+
+.block_user {
+    background-color: rgb(122, 0, 0) !important;
+}
+
+.unblock_user {
+    background-color: rgb(2, 90, 2) !important;
+}
+
+@media screen and (max-width: 1105px) {
+    .user_details_avatar {
+        width: 300px;
+        height: 300px;
+        margin-right: 20px;
+    }
+
+    .user_details_content {
+
+        margin-top: 10px;
+    }
+
+    .user_details {
+        display: unset;
+        position: relative;
+    }
+
+    .user_details_desc {
+        width: unset;
+    }
+
+    .setting_user {
+        margin-left: 30px;
+        position: absolute;
+        text-align: right;
+        right: 0;
+        top: 0;
+    }
+    .PopupAdminUser_block {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .setting_user {
+        right: 15px;
+        
+    }
+    .user_details_avatar {
+        width: 100%;
+        height: 300px;
+        margin-right: 20px;
+    }
+}

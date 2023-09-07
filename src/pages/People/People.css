@@ -1,0 +1,56 @@
+.people {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.people_edit {
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+.people_edit img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+
+}
+
+.people_avatar {
+  display: flex;
+  align-items: center;
+}
+
+.people_avatar img {
+  margin-right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.people_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  transition: 0.3s;
+}
+
+.people_block:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+@media screen and (max-width: 1105px) {
+  .people {
+   height: 100vh;
+  }
+  .people_edit {
+    margin-right: 0px;
+  }
+}
